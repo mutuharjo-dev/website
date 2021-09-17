@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  * {
+    @apply transition;
+    @apply duration-300;
+  }
+
+  body {
+    @apply bg-gray-100;
+  }
+}
