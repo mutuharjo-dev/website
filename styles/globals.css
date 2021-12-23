@@ -2,13 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .bg-app {
+    background-color: #fef1e6;
+  }
+
+  .bg-base {
+    background-color: #ff4c29;
+  }
+}
+
 @layer base {
   * {
     @apply transition;
     @apply duration-300;
+    @apply text-gray-800;
   }
 
-  body {
-    @apply bg-gray-100;
-  }
+  /* body {
+    background-color: #fef1e6;
+  } */
 }
